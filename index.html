@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Social Media Marketing and Video Editing Agency offering customized video services.">
+    <title>Editkaro.in | Video Editing Agency</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header and Navigation -->
+    <header>
+        <div class="logo">
+            <h1>EditKaro.in</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Your Social Media Marketing & Video Editing Partner</h2>
+        <p>We specialize in creating visually stunning and impactful video content for all platforms.</p>
+        <a href="#portfolio" class="btn">Explore Our Work</a>
+    </section>
+
+    <!-- Email Collector Section -->
+    <section id="subscribe" class="subscribe">
+        <h3>Stay Updated with Our Latest Work</h3>
+        <form id="email-form">
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+        <p id="subscription-status"></p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="filters">
+            <button class="filter-btn" data-category="all">All</button>
+            <button class="filter-btn" data-category="short">Short-form Videos</button>
+            <button class="filter-btn" data-category="long">Long-form Videos</button>
+            <button class="filter-btn" data-category="gaming">Gaming Videos</button>
+            <button class="filter-btn" data-category="football">Football Edits</button>
+            <button class="filter-btn" data-category="ecommerce">eCommerce Ads</button>
+            <button class="filter-btn" data-category="documentary">Documentary Style</button>
+            <button class="filter-btn" data-category="color-grading">Color Grading</button>
+            <button class="filter-btn" data-category="anime">Anime Videos</button>
+            <button class="filter-btn" data-category="ads">Ads</button>
+        </div>
+
+        <div class="portfolio-grid">
+            <!-- Example portfolio item -->
+             <div class="portfolio-item" data-category="short">
+                <img src="shorts.jpg" alt="Short Video Thumbnail">
+                <div class="overlay">
+                    <h3>Short-form Video</h3>
+                    <a href="https://www.youtube.com/shorts/MC5EtyQHpD8" class="view-btn" target="_blank">View</a>
+                </div>
+            </div>
+           
+             <!-- long video -->
+             <div class="portfolio-item" data-category="Long">
+                <img src="long.webp" alt="Long Video">
+                <div class="overlay">
+                    <h3>Long-form Video</h3>
+                    <a href="https://www.youtube.com/watch?v=358xI2QpWKU" class="view-btn" target="_blank">View</a>
+                </div>
+            </div>
+             <!-- gaming vdo -->
+             <div class="portfolio-item" data-category="Gaming">
+                <img src="gaming.webp" alt="Gaming Video Thumbnail">
+                <div class="overlay">
+                    <h3>Gaming Video</h3>
+                    <a href="https://www.youtube.com/watch?v=ewOppiD9ckI" class="view-btn" target="_blank">View</a>
+                </div>
+            </div>
+             <!-- anime -->
+             <div class="portfolio-item" data-category="Long">
+                <img src="anime.jpg" alt="Anime Video Thumbnail">
+                <div class="overlay">
+                    <h3>Anime Video</h3>
+                    <a href="https://www.youtube.com/watch?v=UObpCrZdF-Y&t=1s" class="view-btn" target="_blank">View</a>
+                </div>
+            </div>
+             <!-- documentary -->
+             <div class="portfolio-item" data-category="Long">
+                <img src="documentary.jpg" alt="Documentary Thumbnail">
+                <div class="overlay">
+                    <h3>Documentary Video</h3>
+                    <a href="https://www.youtube.com/watch?v=uIU05TvlFOA" class="view-btn" target="_blank">View</a>
+                </div>
+            </div>
+             <!-- football edits -->
+             <div class="portfolio-item" data-category="Long">
+                <img src="football edits.jpg" alt="Football edits Thumbnail">
+                <div class="overlay">
+                    <h3>Football edits Video</h3>
+                    <a href="https://www.youtube.com/watch?v=9othUYaWukk" class="view-btn" target="_blank">View</a>
+                </div>
+            </div>
+             <!--ecommerce -->
+             <div class="portfolio-item" data-category="Long">
+                <img src="e-commerce.jpg" alt="e-commerce Video Thumbnail">
+                <div class="overlay">
+                    <h3>ecommerce Video</h3>
+                    <a href="https://www.youtube.com/watch?v=H3Uk9WAOI08" class="view-btn" target="_blank">View</a>
+                </div>
+            </div>
+             <!-- color grading -->
+             <div class="portfolio-item" data-category="Long">
+                <img src="color-grading.jpg" alt="color-grading Video Thumbnail">
+                <div class="overlay">
+                    <h3>Color grading Video</h3>
+                    <a href="hhttps://www.youtube.com/watch?v=xhU7_gTgWcY" class="view-btn" target="_blank">View</a>
+                </div>
+            </div>
+             <!-- ads -->
+             <div class="portfolio-item" data-category="short">
+                <img src="ads.webp" alt="Ads Thumbnail">
+                <div class="overlay">
+                    <h3>Ads Video</h3>
+                    <a href="https://www.youtube.com/watch?v=LnvSNO-PUsg" class="view-btn" target="_blank">View</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="tel" name="phone" placeholder="Your Phone Number">
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <p id="contact-status"></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
